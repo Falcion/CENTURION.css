@@ -1,0 +1,196 @@
+/**
+ Name: Centurion
+ Author: Falcion
+ Link: https://github.com/Falcion/
+ Description: Custom theme to correctly justify text and contents of your zettelkatsen, includes adaptivity to "updates" breaking styles.
+ **/
+
+:root {
+  --new-line-width: 700px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: left;
+}
+
+.cm-embed-block {
+	text-align: justify;
+	text-justify: inter-word;
+  hyphens: auto;
+  word-spacing: 0px;
+}
+
+/* reading mode */
+.markdown-preview-view p {
+	text-align: justify;
+	text-justify: inter-word;	
+  width: var(--new-line-width);
+  line-height: 1.5;
+  max-width: 700px;
+  hyphens: auto;
+  word-spacing: 0px;
+}
+
+.markdown-source-view.mod-cm6 .cm-line {
+  text-align: justify;
+	text-justify: inter-word;	
+  width: var(--new-line-width);
+  line-height: 1.5;
+  max-width: 700px;
+  hyphens: auto;
+  word-spacing: 0px;
+}
+
+.cm-list {
+  text-align: justify;
+	text-justify: inter-word;
+  hyphens: auto;
+  word-spacing: 0px;
+}
+
+.cm-list-1 {
+  width: 100%;
+  height: 100%;
+  text-align: justify;
+	text-justify: inter-word;
+  hyphens: auto;
+  word-spacing: 0px;
+}
+
+.cm-formatting-list cm-formatting-list-ol cm-list-1, .cm-header, .HyperMD-list-line {
+  text-align: left;
+}
+
+.admonition {
+  text-align: justify;
+	text-justify: inter-word;	
+  width: var(--new-line-width);
+  line-height: 1.5;
+  max-width: 700px;
+  hyphens: auto;
+  word-spacing: 0px;
+}
+
+.admonition-parent {
+  width: var(--new-line-width);
+}
+
+.markdown-rendered table,
+.markdown-rendered .table-view-table {
+  margin-bottom: 24px;
+  border-collapse: collapse;
+  table-layout: auto;
+  width: 100%;
+}
+.cm-embed-block.markdown-rendered .block-language-dataview th,
+.cm-embed-block.markdown-rendered .block-language-dataview td,
+.markdown-rendered table th,
+.markdown-rendered table td,
+.markdown-rendered .table-view-table th,
+.markdown-rendered .table-view-table td {
+  padding: 4px 8px 4px 16px;
+  border: none;
+}
+.table-single-rows .cm-embed-block.markdown-rendered .block-language-dataview th,
+.table-single-rows .cm-embed-block.markdown-rendered .block-language-dataview td,
+.table-single-rows .markdown-rendered table th,
+.table-single-rows .markdown-rendered table td,
+.table-single-rows .markdown-rendered .table-view-table th,
+.table-single-rows .markdown-rendered .table-view-table td {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.markdown-rendered table th,
+.markdown-rendered .table-view-table th {
+  font-size: var(--table-header-size);
+  font-weight: var(--table-header-weight);
+  border-bottom: 1px solid var(--border-subtle-2);
+}
+.table-cell-border .cm-embed-block.markdown-rendered .block-language-dataview th,
+.table-cell-border .markdown-rendered table th,
+.table-cell-border .markdown-rendered .table-view-table th {
+  border: 1px solid var(--border-subtle-1);
+  border-bottom: 1px solid var(--border-strong-1);
+}
+.table-sticky-headers .cm-embed-block.markdown-rendered .block-language-dataview thead,
+.table-sticky-headers .cm-embed-block.markdown-rendered .block-language-dataview tbody tr,
+.table-sticky-headers .markdown-rendered table thead,
+.table-sticky-headers .markdown-rendered table tbody tr,
+.table-sticky-headers .markdown-rendered .table-view-table thead,
+.table-sticky-headers .markdown-rendered .table-view-table tbody tr {
+  border-collapse: collapse;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.table-sticky-headers .cm-embed-block.markdown-rendered .block-language-dataview tbody,
+.table-sticky-headers .markdown-rendered table tbody,
+.table-sticky-headers .markdown-rendered .table-view-table tbody {
+  display: block;
+  max-height: var(--table-sticky-height);
+  overflow: auto;
+}
+.markdown-rendered table td,
+.markdown-rendered .table-view-table td {
+  font-size: var(--font-smaller);
+  font-weight: var(--font-normal);
+}
+.table-cell-border .cm-embed-block.markdown-rendered .block-language-dataview td,
+.table-cell-border .markdown-rendered table td,
+.table-cell-border .markdown-rendered .table-view-table td {
+  border: 1px solid var(--border-subtle-1);
+}
+.table-column-border .cm-embed-block.markdown-rendered .block-language-dataview td:not(:last-child),
+.table-column-border .markdown-rendered table td:not(:last-child),
+.table-column-border .markdown-rendered .table-view-table td:not(:last-child) {
+  border-right: 1px solid var(--border-subtle-1);
+}
+.markdown-rendered table tbody tr,
+.markdown-rendered .table-view-table tbody tr {
+  margin: 0;
+}
+.table-hover-row .cm-embed-block.markdown-rendered .block-language-dataview tbody tr:hover,
+.table-hover-row .markdown-rendered table tbody tr:hover,
+.table-hover-row .markdown-rendered .table-view-table tbody tr:hover {
+  background-color: transparent;
+}
+.table-alternate-column .cm-embed-block.markdown-rendered .block-language-dataview tbody tr td:nth-child(odd),
+.table-alternate-column .markdown-rendered table tbody tr td:nth-child(odd),
+.table-alternate-column .markdown-rendered .table-view-table tbody tr td:nth-child(odd) {
+  border-top: 1px solid var(--background-hover);
+  border-bottom: 1px solid var(--background-hover);
+}
+.table-row-border:not(.table-sticky-headers) .cm-embed-block.markdown-rendered .block-language-dataview tbody tr td,
+.table-row-border:not(.table-sticky-headers) .markdown-rendered table tbody tr td,
+.table-row-border:not(.table-sticky-headers) .markdown-rendered .table-view-table tbody tr td {
+  border-top: 1px solid var(--border-subtle-1);
+  border-bottom: 1px solid var(--border-subtle-1);
+}
+.table-sticky-headers.table-row-border .cm-embed-block.markdown-rendered .block-language-dataview tbody tr td,
+.table-sticky-headers.table-row-border .markdown-rendered table tbody tr td,
+.table-sticky-headers.table-row-border .markdown-rendered .table-view-table tbody tr td {
+  border-bottom: 1px solid var(--border-subtle-1);
+}
+.table-nums table {
+  counter-reset: section;
+}
+.table-nums table thead > tr > th:first-child::before {
+  display: inline-block;
+  content: " ";
+  padding-right: 8px;
+  min-width: 3ch;
+}
+.table-nums table tbody > tr > td:first-child::before {
+  display: inline-block;
+  counter-increment: section;
+  content: counter(section) " ";
+  text-align: center;
+  padding-right: 8px;
+  font-size: 0.875em;
+  font-variant-numeric: tabular-nums;
+  min-width: 3ch;
+}
+.table-tabular-figures table {
+  font-variant-numeric: tabular-nums;
+}
