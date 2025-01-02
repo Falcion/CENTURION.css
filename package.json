@@ -162,7 +162,7 @@
     "github-wiki-sidebar": "^2.0.1",
     "husky": "^9.1.6",
     "lint": "^1.1.2",
-    "markdownlint-cli2": "^0.14.0",
+    "markdownlint-cli2": "^0.17.0",
     "minimist": "^1.2.8",
     "pre-flight": "^1.1.1",
     "prettier": "^3.3.3",
@@ -180,7 +180,7 @@
     "@changesets/cli": "^2.27.9",
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
-    "@electron/lint-roller": "^2.4.0",
+    "@electron/lint-roller": "^3.0.0",
     "@npmcli/package-json": "^6.0.0",
     "@types/fs-extra": "^11.0.4",
     "@types/minimist": "^1.2.5",
@@ -195,7 +195,7 @@
     "eslint-plugin-markdownlint": "^0.6.0",
     "eslint-plugin-node": "^11.1.0",
     "lint-staged": "^15.2.10",
-    "markdownlint": "^0.35.0"
+    "markdownlint": "^0.37.0"
   },
   "config": {
     "commitizen": {
